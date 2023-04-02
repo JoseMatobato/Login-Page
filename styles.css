@@ -1,0 +1,137 @@
+body {
+    background-color: #E0013F;
+    color: black;
+    font-family: Montserrat;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: #e0013f;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    animation: slide 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    font-family: Arial;
+}
+
+p{
+    width: 500px;
+    text-align: center;
+    padding: 80px;
+    font-family: Arial;
+    color: white;
+    animation: slide 1s ease-in-out forwards, fade 1s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+#footer{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#emailsprite{
+    width:  53.5px;
+    height: 53.5px;
+    background: url(sprites.png) -66.5px -130.5px;
+    background-size: 320px 314.5px;
+}
+
+#fbsprite{
+    width: 53px;
+    height: 53.5px;
+    background: url(sprites.png) -133.5px -130.5px;
+    background-size: 320px 314.5px;
+}
+
+#logo{
+      width: 64px;
+      height: 64px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #292F36;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1E222A;
+}
+
+.error-animation {
+    animation: shake 0.5s ease-in-out;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
